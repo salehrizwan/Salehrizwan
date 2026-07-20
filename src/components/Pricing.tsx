@@ -153,13 +153,21 @@ export function Pricing() {
           <h3 className="text-2xl font-bold text-brand-black mb-4">Maintenance & Retainer Plans</h3>
           <p className="text-gray-500 mb-8">Ongoing support to keep your website fast, secure, and up to date.</p>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {maintenancePlans.map((plan, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                 <div className="text-lg font-bold text-brand-black mb-2">{plan.name}</div>
                 <div className="text-3xl font-black text-brand-orange">{plan.price}<span className="text-sm text-gray-400 font-medium">/mo</span></div>
               </div>
             ))}
+          </div>
+
+          <div className="border-t border-gray-100 pt-12">
+            <h3 className="text-2xl font-bold text-brand-black mb-4">Need something custom?</h3>
+            <p className="text-gray-500 mb-6">If your project doesn't fit into these packages, we can build a personalized solution.</p>
+            <a href="#contact" className="inline-block bg-brand-black text-white px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-colors shadow-lg">
+              Contact me for a personalized quote
+            </a>
           </div>
         </div>
 

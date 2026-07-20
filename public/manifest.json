@@ -1,0 +1,15 @@
+{
+  "name": "Saleh Rizwan Digital",
+  "short_name": "SR Digital",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6A1A",
+  "icons": [
+    {
+      "src": "/salehrizwanlogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

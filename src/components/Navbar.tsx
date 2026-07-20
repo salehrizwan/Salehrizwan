@@ -2,15 +2,15 @@ import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-export function Navbar() {
+export function Navbar({ onPlayIntro }: { onPlayIntro?: () => void }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold tracking-tight text-brand-black">
+        <button onClick={onPlayIntro} className="text-2xl font-bold tracking-tight text-brand-black hover:opacity-80 transition-opacity">
           Saleh <span className="text-brand-orange font-normal text-xl ml-1">Rizwan</span>
-        </a>
+        </button>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
@@ -19,7 +19,7 @@ export function Navbar() {
           <a href="#process" className="hover:text-brand-black transition-colors">Process</a>
           <a href="#pricing" className="hover:text-brand-black transition-colors">Pricing</a>
         </div>
-
+        
         <div className="hidden md:flex items-center gap-4">
           <a href="#contact" className="bg-brand-orange text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
             Start Project
