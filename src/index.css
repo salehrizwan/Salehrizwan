@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --color-brand-orange: #ea580c;
+  --color-brand-black: #111111;
+  --color-brand-gray: #F8F9FB;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #111111;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+  font-family: var(--font-inter);
+}
